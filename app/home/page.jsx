@@ -21,12 +21,13 @@ useEffect( () =>{
       const data = await respo.json()
       setPhotos(data.slice(0,30))
   }
-  // getPhotos()
+  getPhotos()
 },[])
 // console.log(photos)
    return (
   
     <>
+    
 
     {/* <Productslist/> */}
 {/* <Products/> */}
@@ -37,6 +38,10 @@ useEffect( () =>{
                     <p className="  p-2 wrap  text-center text-white m-auto text-20">shop with us and discover more on our big deals and discount upto 20%</p>
                   <img className="  w-full h-100 object-contain block p-4 " src="https://www.shutterstock.com/image-photo/hero-low-angle-shot-large-260nw-2617575817.jpg" alt="" />
                 </div>
+                <div>
+                  <h2>you can also sell with us </h2>
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-vh4xvevllhr-sUgSNgtGBHiUK_O_gTk5Iw&s" alt="sell " width={200} height={100} ></img>
+                </div>
     {/* <Promotions/> */}
     
     {/* <Preview/>  */}
@@ -45,7 +50,7 @@ useEffect( () =>{
 {/* <Specification/>    */}
    {/* <ShippmentAddress/> */}
    {/* <ProductOverView/> */}
-    <ul>
+    <ul className="bg-black">
 {photos.map( (photo) =>(
   
 
@@ -58,13 +63,13 @@ useEffect( () =>{
 </li>
 ))}
 </ul> 
- <div >
-  <div className="mx-auto max-w-2xl px-6 py-10sm:px-6 sm:py-24 lg:max-w-5xl lg:px-8">
+ <div  className="w-full">
+  <div className="bg-yellow-800">
     <h2 className="text-2xl font-bold tracking-tight text-green-900 text-center capitalize">shop like a billioner while spend less</h2>
 
     <div className="mt-3 grid grid-cols-1 gap-x-2 gap-y-2 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8 ">
       <div className="group relative border  mt-2 rounded border-red-900 " id="1" >
-      <img src="https://m.media-amazon.com/images/I/71MCH34W2yL.__AC_SX300_SY300_QL70_ML2_.jpg" alt="Front of men&#039;s Basic Tee in black." className="aspect-square w-full rounded-md  object-contain group-hover:opacity-75 lg:aspect-auto lg:h-80 p-2" width={200}/>
+      <img src="https://m.media-amazon.com/images/I/71MCH34W2yL.__AC_SX300_SY300_QL70_ML2_.jpg" alt="Front of men&#039;s Basic Tee in black." className="aspect-square w-full rounded-md  object-contain group-hover:opacity-75 lg:aspect-auto lg:h-auto p-2" width={200}/>
         <div className=" bg-purple-900 p-3 mt-4">
           <div>
         <p className="mt-1 text-lg text-white">smart watch</p>
@@ -79,7 +84,7 @@ useEffect( () =>{
         </div>
       </div>
       <div className=" relative border p-2  rounded border-red-900 bg-white-800" id="1" >
-      <img src="https://m.media-amazon.com/images/I/41SRBNwCLtL._AC_UL320_.jpg" alt="Front of men&#039;s Basic Tee in black." className="aspect-square w-full rounded-md  object-contain group-hover:opacity-75 lg:aspect-auto lg:h-80 p-2 " width={200} />
+      <img src="https://m.media-amazon.com/images/I/41SRBNwCLtL._AC_UL320_.jpg" alt="Front of men&#039;s Basic Tee in black." className="aspect-square w-full rounded-md  object-contain group-hover:opacity-75 lg:aspect-auto lg:h-auto p-2 " width={200} />
         <div className=" ">
           <br></br>
           <div>
