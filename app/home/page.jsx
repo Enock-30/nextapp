@@ -21,7 +21,7 @@ useEffect( () =>{
       const data = await respo.json()
       setPhotos(data.slice(0,30))
   }
-  getPhotos()
+  // getPhotos()
 },[])
 // console.log(photos)
    return (
@@ -62,25 +62,25 @@ useEffect( () =>{
   <div className="mx-auto max-w-2xl px-6 py-10sm:px-6 sm:py-24 lg:max-w-5xl lg:px-8">
     <h2 className="text-2xl font-bold tracking-tight text-green-900 text-center capitalize">shop like a billioner while spend less</h2>
 
-    <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8 ">
-      <div className="group relative border   rounded border-red-900  h-auto" id="1" >
-      <img src="https://m.media-amazon.com/images/I/71MCH34W2yL.__AC_SX300_SY300_QL70_ML2_.jpg" alt="Front of men&#039;s Basic Tee in black." className="aspect-square w-full rounded-md  object-contain group-hover:opacity-75 lg:aspect-auto lg:h-150 p-2" width={200}/>
-        <div className="mt-4 bg-black ">
+    <div className="mt-3 grid grid-cols-1 gap-x-2 gap-y-2 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8 ">
+      <div className="group relative border  mt-2 rounded border-red-900 " id="1" >
+      <img src="https://m.media-amazon.com/images/I/71MCH34W2yL.__AC_SX300_SY300_QL70_ML2_.jpg" alt="Front of men&#039;s Basic Tee in black." className="aspect-square w-full rounded-md  object-contain group-hover:opacity-75 lg:aspect-auto lg:h-80 p-2" width={200}/>
+        <div className=" bg-purple-900 p-3 mt-4">
           <div>
-        <p className="mt-1 text-lg ">smart watch</p>
+        <p className="mt-1 text-lg text-white">smart watch</p>
           </div>
 
-          <p className="text-lg font-medium text-gray-900 text-orange-800"> AED1,056.90</p>
-          <p>Samsung Galaxy Watch Ultra Smartwatch, Titanium Silver, 47mm, LTE, Health Monitoring, Fitness Tracker (UAE Version)</p>
-          <h4 className="text-blue-900">Get it as soon as Tuesday, June 17</h4>
-          <p>Fulfilled by Eagle1 - FREE Shipping</p>
-            <button className="bg-green-600 p-1 rounded-full w-40 block m-auto ">Add cart</button>
+          <p className="text-lg font-medium  text-orange-800"> AED1,056.90</p>
+          <p className="text-white">Samsung Galaxy Watch Ultra Smartwatch, Titanium Silver, 47mm, LTE, Health Monitoring, Fitness Tracker (UAE Version)</p>
+          <h4 className="text-black">Get it as soon as Tuesday, June 17</h4>
+          <p className="text-white mb-2">Fulfilled by Eagle1 - FREE Shipping</p>
+            <button className="bg-green-600 p-1 rounded-full w-40 block m-auto  ">Add cart</button>
 
         </div>
       </div>
       <div className=" relative border p-2  rounded border-red-900 bg-white-800" id="1" >
       <img src="https://m.media-amazon.com/images/I/41SRBNwCLtL._AC_UL320_.jpg" alt="Front of men&#039;s Basic Tee in black." className="aspect-square w-full rounded-md  object-contain group-hover:opacity-75 lg:aspect-auto lg:h-80 p-2 " width={200} />
-        <div className="mt-4 ">
+        <div className=" ">
           <br></br>
           <div>
         <p className="mt-1 text-lg text-bolder">Generic</p>
@@ -97,7 +97,7 @@ useEffect( () =>{
       </div>
       <div className=" relative border p-2  rounded border-red-900 bg-white-800" id="1" >
       <img src="https://m.media-amazon.com/images/I/41SRBNwCLtL._AC_UL320_.jpg" alt="Front of men&#039;s Basic Tee in black." className="aspect-square w-full rounded-md  object-contain group-hover:opacity-75 lg:aspect-auto lg:h-80 p-2 " width={200} />
-        <div className="mt-4 ">
+        <div className="mt-40 ">
           <br></br>
           <div>
         <p className="mt-1 text-lg text-bolder">Generic</p>
