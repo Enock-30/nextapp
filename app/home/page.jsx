@@ -35,7 +35,7 @@ useEffect( () =>{
 
        <Toggle/> 
                   <div className=" bg-gray-900">
-                    <div className="bg-black p-2 xl:flex ">
+                    <div className="bg-gray flex p-2 xl:flex ">
                     <p className="  p-2 wrap  text-center text-white m-auto text-20">shop with us and discover more on our big deals and discount upto 20%</p>
                       <button className="cursor-pointer text-yellow-600 hover:opacity-75 hover:bg-green-800 text-white-800 rounded-full w-20 text-center"> 
                       <FontAwesomeIcon icon={faBars}/>
@@ -43,7 +43,12 @@ useEffect( () =>{
                     </div>
                   <img className="  w-full h-100 object-contain block p-4 " src="https://www.shutterstock.com/image-photo/hero-low-angle-shot-large-260nw-2617575817.jpg" alt="" />
                 </div>
-                <div className="w-170 m-auto flex items-center">                    <p className="  p-2 wrap  text-center text-white m-auto text-20">shop with us and discover more on our big deals and discount upto 20%</p>
+                <div style={{
+                  display:"flex",
+                  alignItems:"center",
+                  justifyContent:'space-evenly',
+                  width:'100%'
+                }}>                    <p className="  p-2 wrap  text-center text-white m-auto text-20">shop with us and discover more on our big deals and discount upto 20%</p>
 
                   <h2 className="text-lg capitalize">you can also sell with us </h2>
                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-vh4xvevllhr-sUgSNgtGBHiUK_O_gTk5Iw&s " className=" block m-auto float" alt="sell " width={200} height={100} />
