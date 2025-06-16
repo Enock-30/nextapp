@@ -9,12 +9,13 @@ import { Preview } from "../reusuableComponents/previewCategory";
 import Specification from "../reusuableComponents/specification";
 import ShippmentAddress from "../reusuableComponents/ship";
 import ProductOverView from "../reusuableComponents/productOverView";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faL } from "@fortawesome/free-solid-svg-icons";
 import Products from "@/components/products";
   import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  import styles from '../styles.module.css'
 const Homes = () =>{ 
 const [ photos,setPhotos] =useState([])
-
+const [toggle,setToggle] =useState(false)
 useEffect( () =>{
   const getPhotos = async()=> {
       const respo = await fetch('https://jsonplaceholder.typicode.com/photos')
@@ -23,7 +24,9 @@ useEffect( () =>{
   }
   getPhotos()
 },[])
-// console.log(photos)
+const handleClick = ()=>{
+setToggle(!toggle)
+}
    return (
   
     <>
@@ -33,28 +36,40 @@ useEffect( () =>{
 {/* <Products/> */}
     
 
-       <Toggle/> 
+     
                   <div className=" bg-gray-900">
                     <div className="bg-gray flex p-2 xl:flex ">
                     <p className="  p-2 wrap  text-center text-white m-auto text-20">shop with us and discover more on our big deals and discount upto 20%</p>
-                      <button className="cursor-pointer text-yellow-600 hover:opacity-75 hover:bg-green-800 text-white-800 rounded-full w-20 text-center"> 
-                      <FontAwesomeIcon icon={faBars}/>
-                      </button>
+                      
                     </div>
                   <img className="  w-full h-100 object-contain block p-4 " src="https://www.shutterstock.com/image-photo/hero-low-angle-shot-large-260nw-2617575817.jpg" alt="" />
                 </div>
                 <div style={{
                   display:"flex",
                   alignItems:"center",
+                  justifyContent:'space-evenly'
+                }}>
+                  
+               
+                <div style={{
+                  display:"flex",
+                  alignItems:"center",
                   justifyContent:'space-evenly',
-                  width:'100%'
-                }}>                    <p className="  p-2 wrap  text-center text-white m-auto text-20">shop with us and discover more on our big deals and discount upto 20%</p>
+                  width:'100%',
+                  position:'relative'
+                }}>
 
                   <h2 className="text-lg capitalize">you can also sell with us </h2>
                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-vh4xvevllhr-sUgSNgtGBHiUK_O_gTk5Iw&s " className=" block m-auto float" alt="sell " width={200} height={100} />
                   <p>click a link below to sell <a href="/sale" className="text-blue-800 underline">sale with us</a></p>
-                </div>
 
+                </div>
+                <button className="cursor-pointer text-yellow-600 hover:opacity-75 hover:bg-green-800 text-white-800 rounded-full w-20 text-center " onClick={handleClick}> 
+                      <FontAwesomeIcon icon={faBars}/>
+                    {/* <Toggle /> */}
+                      </button>
+ </div>
+ 
     {/* <Promotions/> */}
     
     {/* <Preview/>  */}
@@ -76,28 +91,27 @@ useEffect( () =>{
 </li>
 ))}
 </ul> 
- <div  className="w-full">
-  <div className="bg-yellow-800">
+ <div  >
+  <div >
     <h2 className="text-2xl font-bold tracking-tight text-green-900 text-center capitalize">shop like a billioner while spend less</h2>
 
-    <div className="mt-3 grid grid-cols-1 gap-x-2 gap-y-2 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8 ">
-      <div className="group relative border  mt-2 rounded border-red-900 " id="1" >
-      <img src="https://m.media-amazon.com/images/I/71MCH34W2yL.__AC_SX300_SY300_QL70_ML2_.jpg" alt="Front of men&#039;s Basic Tee in black." className="aspect-square w-full rounded-md  object-contain group-hover:opacity-75 lg:aspect-auto lg:h-auto p-2" width={200}/>
-        <div className=" bg-purple-900 p-3 mt-4">
+    <div className="mt-3 grid grid-cols-1 gap-x-2 gap-y-2 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8 " >
+      <div  style={{height:'200px'}} className="group relative border  mt-2 rounded border-red-900 " id="1" >
+      <img src="https://m.media-amazon.com/images/I/71MCH34W2yL.__AC_SX300_SY300_QL70_ML2_.jpg" alt="Front of men&#039;s Basic Tee in black." className="aspect-square w-full rounded-md  object-contain group-hover:opacity-75 lg:aspect-auto lg:h-80 p-2" width={200}/>
+        <div  className=" bg-purple-900 p-3 mt-4">
           <div>
         <p className="mt-1 text-lg text-white">smart watch</p>
           </div>
-
           <p className="text-lg font-medium  text-orange-800"> AED1,056.90</p>
-          <p className="text-white">Samsung Galaxy Watch Ultra Smartwatch, Titanium Silver, 47mm, LTE, Health Monitoring, Fitness Tracker (UAE Version)</p>
+          <p className={styles.wrap}>Samsung Galaxy Watch Ultra Smartwatch, Titanium Silver, 47mm, LTE, Health Monitoring, Fitness Tracker (UAE Version)</p>
           <h4 className="text-black">Get it as soon as Tuesday, June 17</h4>
           <p className="text-white mb-2">Fulfilled by Eagle1 - FREE Shipping</p>
             <button className="bg-green-600 p-1 rounded-full w-40 block m-auto  ">Add cart</button>
 
         </div>
       </div>
-      <div className=" relative border p-2  rounded border-red-900 bg-white-800" id="1" >
-      <img src="https://m.media-amazon.com/images/I/41SRBNwCLtL._AC_UL320_.jpg" alt="Front of men&#039;s Basic Tee in black." className="aspect-square w-full rounded-md  object-contain group-hover:opacity-75 lg:aspect-auto lg:h-auto p-2 " width={200} />
+      <div style={{height:'150px'}} className=" relative border p-2  rounded border-red-900 bg-white-800" id="2" >
+      <img src="https://m.media-amazon.com/images/I/41SRBNwCLtL._AC_UL320_.jpg" alt="Front of men&#039;s Basic Tee in black." className="aspect-square w-full rounded-md  object-cover group-hover:opacity-75 lg:aspect-auto lg:h-auto p-2 " width={200} />
         <div className=" ">
           <br></br>
           <div>
@@ -114,8 +128,8 @@ useEffect( () =>{
         </div>
       </div>
       <div className=" relative border p-2  rounded border-red-900 bg-white-800" id="1" >
-      <img src="https://m.media-amazon.com/images/I/41SRBNwCLtL._AC_UL320_.jpg" alt="Front of men&#039;s Basic Tee in black." className="aspect-square w-full rounded-md  object-contain group-hover:opacity-75 lg:aspect-auto lg:h-80 p-2 " width={200} />
-        <div className="mt-40 ">
+      <img src="https://m.media-amazon.com/images/I/41SRBNwCLtL._AC_UL320_.jpg" alt="Front of men&#039;s Basic Tee in black." className="aspect-square w-full sm:h-auto rounded-md  object-contain group-hover:opacity-75 lg:aspect-auto lg:h-atuo p-2 " width={200} />
+        <div className="mt-4 ">
           <br></br>
           <div>
         <p className="mt-1 text-lg text-bolder">Generic</p>
