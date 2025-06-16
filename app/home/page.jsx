@@ -96,7 +96,7 @@ setToggle(!toggle)
     <h2 className="text-2xl font-bold tracking-tight text-green-900 text-center capitalize">shop like a billioner while spend less</h2>
 
     <div className="mt-3 grid grid-cols-1 gap-x-2 gap-y-2 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8 " >
-      <div  style={{height:'200px'}} className="group relative border  mt-2 rounded border-red-900 " id="1" >
+      <div   className="group relative  border mt-2 rounded border-red-900 " id="1" >
       <img src="https://m.media-amazon.com/images/I/71MCH34W2yL.__AC_SX300_SY300_QL70_ML2_.jpg" alt="Front of men&#039;s Basic Tee in black." className="aspect-square w-full rounded-md  object-contain group-hover:opacity-75 lg:aspect-auto lg:h-80 p-2" width={200}/>
         <div  className=" bg-purple-900 p-3 mt-4">
           <div>
@@ -110,44 +110,11 @@ setToggle(!toggle)
 
         </div>
       </div>
-      <div style={{height:'150px'}} className=" relative border p-2  rounded border-red-900 bg-white-800" id="2" >
-      <img src="https://m.media-amazon.com/images/I/41SRBNwCLtL._AC_UL320_.jpg" alt="Front of men&#039;s Basic Tee in black." className="aspect-square w-full rounded-md  object-cover group-hover:opacity-75 lg:aspect-auto lg:h-auto p-2 " width={200} />
-        <div className=" ">
-          <br></br>
-          <div>
-        <p className="mt-1 text-lg text-bolder">Generic</p>
-          </div>
-          <p className="text-lg font-medium text-gray-900 text-orange-800"> AED60.67</p>
-          <p>Generic
-        Dresses for women Women Long Sleevve Classy Dress</p>
-          <h4><span className="text-blue-900">FREE delivery Tue, 17 Jun</span> on your first order
-          Or fastest delivery Tomorrow, 16 Jun</h4>
-          <p className="text-orange-800">Only 1 left in stock - order soon.</p>
-            <button className="bg-green-600 p-1 rounded-full w-40 block m-auto ">Add cart</button>
-
-        </div>
-      </div>
-      <div className=" relative border p-2  rounded border-red-900 bg-white-800" id="1" >
-      <img src="https://m.media-amazon.com/images/I/41SRBNwCLtL._AC_UL320_.jpg" alt="Front of men&#039;s Basic Tee in black." className="aspect-square w-full sm:h-auto rounded-md  object-contain group-hover:opacity-75 lg:aspect-auto lg:h-atuo p-2 " width={200} />
-        <div className="mt-4 ">
-          <br></br>
-          <div>
-        <p className="mt-1 text-lg text-bolder">Generic</p>
-          </div>
-          <p className="text-lg font-medium text-gray-900 text-orange-800"> AED60.67</p>
-          <p>Generic
-        Dresses for women Women Long Sleevve Classy Dress</p>
-          <h4><span className="text-blue-900">FREE delivery Tue, 17 Jun</span> on your first order
-          Or fastest delivery Tomorrow, 16 Jun</h4>
-          <p className="text-orange-800">Only 1 left in stock - order soon.</p>
-            <button className="bg-green-600 p-1 rounded-full w-40 block m-auto ">Add cart</button>
-
-        </div>
-      </div>
-      <div className=" relative border p-2  rounded border-red-900 bg-white-800" id="1" >
+      
+      
+      <div className=" border p-2  rounded border-red-900 bg-black-800" id="2" >
       <img src="https://m.media-amazon.com/images/I/41SRBNwCLtL._AC_UL320_.jpg" alt="Front of men&#039;s Basic Tee in black." className="aspect-square w-full rounded-md  object-contain group-hover:opacity-75 lg:aspect-auto lg:h-80 p-2 " width={200} />
         <div className="mt-4 ">
-          <br></br>
           <div>
         <p className="mt-1 text-lg text-bolder">Generic</p>
           </div>
@@ -539,40 +506,8 @@ setToggle(!toggle)
 
         </div>
       </div>
-      <div className=" relative border p-2  rounded border-red-900 bg-white-800" id="1" >
-      <img src="https://m.media-amazon.com/images/I/71ep0U9c+VL._AC_UL320_.jpg" alt="Front of men&#039;s Basic Tee in black." className="aspect-square w-full rounded-md  object-contain group-hover:opacity-75 lg:aspect-auto lg:h-80 p-2 " width={200} />
-        <div className="mt-4 ">
-          
-
-          <div>
-        <p className="mt-1 text-lg text-bolder">Clarks</p>
-          </div>
-          <p className="text-lg font-medium text-gray-900 text-orange-800">AED249.00 Was: AED 295.77Was: AED295.77 </p>
-          <p>Whiddon Cap Mens Oxford</p>
-          <h4><span className="text-blue-900"> FREE delivery Tue, 17 Jun</span> on your first order
-          Or fastest delivery Tomorrow, 16 Jun</h4>
-          <p className="text-orange-800">Only 10 left in stock - order soon.</p>
-            <button className="bg-green-600 p-1 rounded-full w-40 block m-auto ">Add cart</button>
-
-        </div>
-      </div>
-      <div className=" relative border p-2  rounded border-red-900 bg-white-800" id="1" >
-      <img src="https://m.media-amazon.com/images/I/71ep0U9c+VL._AC_UL320_.jpg" alt="Front of men&#039;s Basic Tee in black." className="aspect-square w-full rounded-md  object-contain group-hover:opacity-75 lg:aspect-auto lg:h-80 p-2 " width={200} />
-        <div className="mt-4 ">
-          
-
-          <div>
-        <p className="mt-1 text-lg text-bolder">Clarks</p>
-          </div>
-          <p className="text-lg font-medium text-gray-900 text-orange-800">AED249.00 Was: AED 295.77Was: AED295.77 </p>
-          <p>Whiddon Cap Mens Oxford</p>
-          <h4><span className="text-blue-900"> FREE delivery Tue, 17 Jun</span> on your first order
-          Or fastest delivery Tomorrow, 16 Jun</h4>
-          <p className="text-orange-800">Only 10 left in stock - order soon.</p>
-            <button className="bg-green-600 p-1 rounded-full w-40 block m-auto ">Add cart</button>
-
-        </div>
-      </div>
+      
+      
       <div className="group relative border p-2  rounded border-red-900 bg-white-800 h-auto" id="1" >
       <img src="https://m.media-amazon.com/images/I/71MCH34W2yL.__AC_SX300_SY300_QL70_ML2_.jpg" alt="Front of men&#039;s Basic Tee in black." className="aspect-square w-full rounded-md  object-contain group-hover:opacity-75 lg:aspect-auto lg:h-150 p-2" width={200}/>
         <div className="mt-4 ">
