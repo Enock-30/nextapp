@@ -1,3 +1,7 @@
 .nav{
     background-color: black;
 }
+.wrap{
+    word-wrap: break-word;
+    
+}
