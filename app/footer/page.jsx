@@ -26,6 +26,7 @@
         <a href="#" className="hover:text-white"><i className="fab fa-twitter"></i> Twitter</a>
         <a href="#" className="hover:text-white"><i className="fab fa-instagram"></i> Instagram</a>
         <a href="#" className="hover:text-white"><i className="fab fa-linkedin-in"></i> LinkedIn</a>
+        <a href="#" className="hover:text-white"><i className="fab fa-what'sapp"></i> what'up</a>
       </div>
     </div>
 
