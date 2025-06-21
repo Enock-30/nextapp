@@ -1,0 +1,32 @@
+{
+	"folders": [
+		{
+			"path": "../../../Desktop/Mynextapp"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../home"
+		},
+		{
+			"path": "../blog"
+		},
+		{
+			"path": "../categories"
+		},
+		{
+			"path": "../reusuableComponents"
+		},
+		{
+			"path": "../server-component"
+		},
+		{
+			"path": "../support"
+		},
+		{
+			"path": "../../nextapp/components"
+		}
+	],
+	"settings": {}
+}
