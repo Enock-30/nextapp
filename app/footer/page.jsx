@@ -5,6 +5,7 @@
       <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
       <p>Email: support@example.com</p>
       <p>Phone: +1 (123) 456-7890</p>
+      <p>Phone: +1 (123) 456-7890</p>
       <p>Address: 1234 Tailwind St, Web City, Internet</p>
     </div>
 
